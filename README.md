@@ -61,7 +61,7 @@ sudo apt-get -y install intel-media-va-driver mesa-va-drivers
 ### Step 4: Clone the repository locally
 ```console
 cd ~/
-git clone http://github.com/Fogus-Gr/dash-proposed-caching.git
+git clone http://github.com/Fogus-Gr/recent-dash-proposed-caching.git
 ```
 
 ---
@@ -80,7 +80,7 @@ sudo apt-get -y install p7zip
 ### Step 5.2: Download and extract the DASH segments
 ```console
 wget http://gain.di.uoa.gr/DASH/dash_segments_bbb.7z -O ~/Downloads/segments.7z
-7z e ~/Downloads/segments.7z -odash-proposed-caching/public/
+7z e ~/Downloads/segments.7z -orecent-dash-proposed-caching/public/
 ```
 
 #### Optional: Delete the downloaded archive
@@ -189,12 +189,12 @@ rm -rf ~/gpac_public/
 If you want to change the segment duration, change the value of 10 in the 4th command of the following set of commands to the desired number of segment duration (in seconds).
 ```console
 wget -c http://ftp.halifax.rwth-aachen.de/blender/demo/movies/BBB/bbb_sunflower_2160p_30fps_normal.mp4 -O ~/Downloads/video.mp4
-cp ~/dash-proposed-caching/transcode.sh ~/Downloads/
+cp ~/recent-dash-proposed-caching/transcode.sh ~/Downloads/
 cd ~/Downloads/
 bash ./transcode.sh 10
-mv ~/Downloads/manifest.mpd ~/dash-proposed-caching/public/
-mv ~/Downloads/*init.mp4 ~/dash-proposed-caching/public/
-mv ~/Downloads/video*.m4s ~/dash-proposed-caching/public/
+mv ~/Downloads/manifest.mpd ~/recent-dash-proposed-caching/public/
+mv ~/Downloads/*init.mp4 ~/recent-dash-proposed-caching/public/
+mv ~/Downloads/video*.m4s ~/recent-dash-proposed-caching/public/
 ```
 
 #### Optional: Delete the downloaded video file and the transcoded / extracted files
@@ -216,7 +216,7 @@ rm -rf ~/Downloads/video_audio.mp4
 ## Experimentation
 Change to the repository directory
 ```console
-cd ~/dash-proposed-caching/
+cd ~/recent-dash-proposed-caching/
 ```
 
 For the video streaming experimentation, two separate executables are provided, depending on whether you want to experiment with Multi-Segment or Single-Segment video streaming.
