@@ -1,13 +1,13 @@
 # Smart video caching for fixed-resolution HTTP Dynamic Streaming
 
 
-This repository contains the software (in binary form) developed during the study conducted for improving HTTP Dynamic Streaming, as part of the [RE-CENT](https://www.re-cent.co/) project.
+This repository contains the software (in binary form) developed during the study conducted for improving HTTP Dynamic Streaming, as part of the [RE-CENT](http://www.re-cent.co/) project.
 
 
 ## Architecture / model / system design
-- [Professor Dionysis Xenakis](https://scholar.google.com/citations?user=0qTbFrgAAAAJ)
+- [Professor Dionysis Xenakis](http://scholar.google.com/citations?user=0qTbFrgAAAAJ)
 ## Implementation design, software development, data analysis
-- [Nikos Episkopos](https://github.com/nbishdev)
+- [Nikos Episkopos](http://github.com/nbishdev)
 
 ---
 
@@ -16,15 +16,15 @@ This repository contains the software (in binary form) developed during the stud
 **NOTE**
 
 All the instructions and the commands that are presented in this guide were executed and tested with the following software combination:
-* [Ubuntu 20.04 Desktop](https://releases.ubuntu.com/20.04/)
+* [Ubuntu 20.04 Desktop](http://releases.ubuntu.com/20.04/)
 * Python version 3.8
 * VLC media player version 3.0.9
 * FFmpeg version 4.2.x
 * MP4Box version 0.9 or newer
 
-The video used for all the experiments was [Big Buck Bunny](https://nl.wikipedia.org/wiki/Big_Buck_Bunny).
+The video used for all the experiments was [Big Buck Bunny](http://en.wikipedia.org/wiki/Big_Buck_Bunny).
 
-![Big Buck Bunny image](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Big_buck_bunny_poster_big.jpg/266px-Big_buck_bunny_poster_big.jpg)
+![Big Buck Bunny image](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Big_buck_bunny_poster_big.jpg/266px-Big_buck_bunny_poster_big.jpg)
 
 ---
 
@@ -61,7 +61,7 @@ sudo apt-get -y install intel-media-va-driver mesa-va-drivers
 ### Step 4: Clone the repository locally
 ```console
 cd ~/
-git clone https://github.com/Fogus-Gr/dash-proposed-caching.git
+git clone http://github.com/Fogus-Gr/dash-proposed-caching.git
 ```
 
 ---
@@ -79,7 +79,7 @@ sudo apt-get -y install p7zip
 
 ### Step 5.2: Download and extract the DASH segments
 ```console
-wget https://gain.di.uoa.gr/DASH/dash_segments_bbb.7z -O ~/Downloads/segments.7z
+wget http://gain.di.uoa.gr/DASH/dash_segments_bbb.7z -O ~/Downloads/segments.7z
 7z e ~/Downloads/segments.7z -odash-proposed-caching/public/
 ```
 
@@ -171,7 +171,7 @@ Proceed to [experimentation](#experimentation).
 sudo apt-get -y install ffmpeg
 ```
 
-### Step 5.2: Follow the instructions in [GPAC's Wiki](https://github.com/gpac/gpac/wiki/GPAC-Build-Guide-for-Linux#mp4box--gpac-only) to install MP4Box for video segmentation
+### Step 5.2: Follow the instructions in [GPAC's Wiki](http://github.com/gpac/gpac/wiki/GPAC-Build-Guide-for-Linux#mp4box--gpac-only) to install MP4Box for video segmentation
 
 #### Optional: Delete the gpac directory
 ```console
@@ -188,7 +188,7 @@ rm -rf ~/gpac_public/
 
 If you want to change the segment duration, change the value of 10 in the 4th command of the following set of commands to the desired number of segment duration (in seconds).
 ```console
-wget -c https://ftp.halifax.rwth-aachen.de/blender/demo/movies/BBB/bbb_sunflower_2160p_30fps_normal.mp4 -O ~/Downloads/video.mp4
+wget -c http://ftp.halifax.rwth-aachen.de/blender/demo/movies/BBB/bbb_sunflower_2160p_30fps_normal.mp4 -O ~/Downloads/video.mp4
 cp ~/dash-proposed-caching/transcode.sh ~/Downloads/
 cd ~/Downloads/
 bash ./transcode.sh 10
