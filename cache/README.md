@@ -1,7 +1,7 @@
 This directory contains the two versions of the video cache proxy HTTP server.
 
 
-Execution instructions for the Send-After-Get (SAG) proxy version:
+Execution instructions for the Single-Segment Send-After-Get (SAG) / Send-While-Get (SWG) proxy version:
 ```console
 usage: proxy [-h] [-a ADDRESS] [-p PORT] [-sa REMOTEADDRESS] [-sp REMOTEPORT]
                   [-d DIRECTORY] -al {sag,swg} -r1 RATE1 [-r2 RATE2]
