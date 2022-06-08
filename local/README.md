@@ -21,6 +21,11 @@ optional arguments:
                         serving directory
 ```
 
+An example execution could be the following:
+```console
+./local -a 127.0.0.1 -p 8002 -sa 127.0.0.3 -sp 8003 -d .
+```
+
 
 Execution instructions for the Multi-Segment (MS) local video content HTTP server/client:
 ```console
@@ -42,6 +47,11 @@ optional arguments:
                         serving directory
 ```
 
+An example execution could be the following:
+```console
+./local-ms -a 127.0.0.1 -p 8002 -sa 127.0.0.3 -sp 8003 -d .
+```
+
 
 Execution instructions for the Multi-Segment (MS) video streaming HTTP client:
 ```console
@@ -60,4 +70,9 @@ optional arguments:
                         serving directory
   -r {2160,1440,1080,720,480,360}, --resolution {2160,1440,1080,720,480,360}
                         video resolution to be streamed
+```
+
+An example execution could be the following:
+```console
+./client-ms -sa 127.0.0.3 -sp 8003 -d . -r 1440
 ```
