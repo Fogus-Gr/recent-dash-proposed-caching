@@ -23,6 +23,10 @@ optional arguments:
                         proxy] through Rayleigh distribution
 ```
 
+An example execution could be the following
+```console
+./main -a 127.0.0.1 -p 8004 -d . -r2 5.0
+```
 
 Execution instructions for the Multi-Segment (MS) version:
 ```console
@@ -44,4 +48,9 @@ optional arguments:
                         sample number
   --rayleigh            introduce randomness in the data channel [from main to
                         proxy] through Rayleigh distribution
+```
+
+An example execution could be the following
+```console
+./main-ms -a 127.0.0.1 -p 8004 -d . -r2 5.0
 ```
