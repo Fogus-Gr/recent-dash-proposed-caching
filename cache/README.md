@@ -43,6 +43,11 @@ optional arguments:
                         to client] through Rayleigh distribution
 ```
 
+An example execution could be the following:
+```console
+./proxy -a 127.0.0.1 -p 8003 -sa 127.0.0.1 -sp 8004 -d . -al swg -r1 15 -r2 5 -l 250 -dl predictive -c random -s 1 -n 131
+```
+
 
 Execution instructions for the Multi-Segment Send-While-Get (MS-SWG) proxy version:
 ```console
@@ -78,4 +83,10 @@ optional arguments:
                         (automatic proxy termination when reached)
   --rayleigh            introduce randomness in the data channel [from proxy to
                         client] through Rayleigh distribution
+```
+
+An example execution could be the following:
+
+```console
+./proxy-ms -a 127.0.0.1 -p 8003 -sa 127.0.0.1 -sp 8004 -d . -r1 15 -r2 5 -l 250 -c random -s 1 -n 131
 ```
