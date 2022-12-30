@@ -7,7 +7,7 @@ This repository contains the software (in binary form) developed during the stud
 ## Architecture / model / system design
 - [Professor Dionysis Xenakis](http://scholar.google.com/citations?user=0qTbFrgAAAAJ)
 ## Implementation design, software development, data analysis
-- [Nikolaos Episkopos](http://github.com/nbishdev)
+- [Nikolaos Episkopos](http://github.com/nepiskopos)
 
 ---
 
