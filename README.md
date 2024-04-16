@@ -1,7 +1,7 @@
 # Smart video caching for fixed-resolution HTTP Dynamic Streaming
 
 
-This repository contains the software (in binary form) developed during the study conducted for improving HTTP Dynamic Streaming, as part of the [RE-CENT](http://www.re-cent.co/) project.
+This repository contains the software (in binary form) developed during the study conducted for improving HTTP Dynamic Streaming.
 
 
 ## Architecture / model / system design
